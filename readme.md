@@ -48,3 +48,14 @@ Config:
 
 ### 6: Test:
 Lambda > Deploy function > Test: create new events, json body: {} , set timeout: 30s > run test > check status EC2
+
+
+#### Public holiday:
+AWS Systems Manager > Parameter Store > public-holidays
+Tier: standard ; Value: 
+{
+  "fixed": ["01-01"],
+  "yearly": {
+    "2026": ["02-16","02-17","02-18","02-19","02-20"]
+  }
+}
